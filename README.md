@@ -49,7 +49,7 @@ Code for our paper "Meta Pairwise Relationship Distillation for Unsupervised Per
 python examples/train.py -b 64 -a resnet50 -d market1501 --iters 400 --momentum 0.1 --eps 0.45 --num-instances 16 --pooling-type gem --memorybank DLhybrid --epochs 60 --logs-dir examples/logs --step-size 25 
 
 # on MSMT17
-python examples/train.py -b 64 -a resnet50 -d msmt17 --iters 400 --momentum 0.1 --eps 0.7 --num-instances 16 --pooling-type gem --memorybank DLhybrid --epochs 50 --logs-dir examples/logs --step-size 20 
+python examples/train.py -b 64 -a resnet50 -d msmt17 --iters 400 --momentum 0.1 --eps 0.7 --num-instances 16 --pooling-type gem --memorybank DLhybrid --epochs 60 --logs-dir examples/logs --step-size 25 
 
 ### pre-trained model
 When training with the backbone of [IBN-ResNet](https://arxiv.org/abs/1807.09441), you need to download the ImageNet-pretrained model from this [link](https://drive.google.com/drive/folders/1thS2B8UOSBi_cJX6zRy6YYRwz_nVFI_S) 
