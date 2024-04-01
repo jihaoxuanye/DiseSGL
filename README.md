@@ -1,7 +1,7 @@
 
 ### Introduction
 
-Code for our paper "Meta Pairwise Relationship Distillation for Unsupervised Person Re-identification".
+Code for our paper "Disentangled Sample Guidance Learning for Unsupervised Person Re-identification".
 
 ### Prerequisites
 
