@@ -35,7 +35,7 @@ from dsgl.utils.logging import Logger
 from dsgl.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
 from dsgl.utils.faiss_rerank import compute_jaccard_distance
 from dsgl.models.distangled_features import id_irrelevant_label, DistangledLearn, RelativeEntropy
-from dsgl.models.uncertains import UncertainSamples
+# from dsgl.models.uncertains import UncertainSamples
 
 start_epoch = best_mAP = 0
 
