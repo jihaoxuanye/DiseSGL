@@ -211,7 +211,7 @@ def main_worker(args):
         if epoch == 0:
             prior_idx2labels = torch.arange(idx2labels.size(0))
             prior_logits = features.mm(cluster_features.t())
-        uncern = UncertainSamples(prelogits=prior_logits, prelabels=prior_idx2labels, labels=idx2labels, temp=args.temp)
+        # uncern = UncertainSamples(prelogits=prior_logits, prelabels=prior_idx2labels, labels=idx2labels, temp=args.temp)
         prior_idx2labels = idx2labels.clone()
 
         del cluster_loader
@@ -239,8 +239,7 @@ def main_worker(args):
             clu_memory=cluster_features, tau=0.5)
 
         re_crit = RelativeEntropy(index2targets=idx2labels,
-                                  clusterset=sorted(dataset.train), uncertain=uncern,
-                                  irre_labels=id_irre_labels[:, 0].view(-1), labels=pseudo_labels)
+                                  clusterset=sorted(dataset.train), irre_labels=id_irre_labels[:, 0].view(-1), labels=pseudo_labels)
         trainer.re_crit = re_crit
 
         del features
