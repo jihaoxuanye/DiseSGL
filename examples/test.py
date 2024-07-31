@@ -10,14 +10,14 @@ from torch import nn
 from torch.backends import cudnn
 from torch.utils.data import DataLoader
 
-from hhcl import datasets
-from hhcl import models
-from hhcl.models.dsbn import convert_dsbn, convert_bn
-from hhcl.evaluators import Evaluator
-from hhcl.utils.data import transforms as T
-from hhcl.utils.data.preprocessor import Preprocessor
-from hhcl.utils.logging import Logger
-from hhcl.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
+from dsgl import datasets
+from dsgl import models
+from dsgl.models.dsbn import convert_dsbn, convert_bn
+from dsgl.evaluators import Evaluator
+from dsgl.utils.data import transforms as T
+from dsgl.utils.data.preprocessor import Preprocessor
+from dsgl.utils.logging import Logger
+from dsgl.utils.serialization import load_checkpoint, save_checkpoint, copy_state_dict
 
 
 def get_data(name, data_dir, height, width, batch_size, workers):
