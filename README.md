@@ -63,7 +63,7 @@ If this repo is helpful for your research, please consider citing the paper:
 @article{ji2024dsgl,
   title={Disentangled Sample Guidance Learning for Unsupervised Person Re-identification},
   author={Ji, Haoxuanye and Wang, Le and Zhou, Sanping and Tang, Wei and Hua, Gang},
-  booktitle={submitted to T-IP},
+  booktitle={T-IP},
   year={2024}
 }
 ```
